@@ -1,1 +1,30 @@
-print ("batata")
+primeiro = int(input('digite o primeiro valor:'))
+segundo = int(input('digite o segundo falor:'))
+opcao = 0
+while opcao !=5:
+    print ('''OQ VC QUER FAZER ? \n[1] SOMAR
+[2] MULTIPLICAR
+[3] MAIOR
+[4] NOVOS NUMEROS
+[5] SAIR DO PROGTAMA
+''')
+    opcao = int(input('>>>>>>QUAL OPÇÃO?'))
+    if opcao == 1:
+        soma = primeiro + segundo
+        print('\nVC ESCOLHEU SOMA {} + {} = {}'.format(primeiro,segundo,soma))
+    elif opcao == 2:
+            multiplicar = primeiro * segundo
+            print ('VC ESCOLHEU MULTIPLICAR {}*{} = {}'.format(primeiro,segundo,multiplicar))
+    elif opcao == 3:
+         if primeiro > segundo:
+          maior = primeiro
+         else:
+            maior = segundo
+            print (f'emtre {primeiro} e {segundo} o maior numero é {maior}')
+    elif opcao == 4:
+        print ('\n \033[31MRECARREGANDO....\033[m')
+        primeiro = int(input ('digite o primeiro valor:'))
+        segundo = int(input('digite o segundo valor'))
+else:
+    print ('FIM DO PROGRAMA')
+print ('-/'*20)
